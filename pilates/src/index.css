@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  /* Definimos tus colores de lujo para el Pilates SPA */
+  --color-pilates-sage: #A7BEAE;
+  --color-pilates-beige: #F7F2EE;
+  --color-pilates-dark: #4A5548;
+
+  /* Tipografía elegante */
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
