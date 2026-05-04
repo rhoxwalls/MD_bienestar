@@ -7,21 +7,21 @@ import React,{useState,useEffect} from "react";
       descripcion: "Localizada, Cardio, Body Jump y rutinas a medida.",
       beneficio: "Resultados visibles con entrenamiento inteligente.",
       color: "bg-pilates-sage/10",
-      imagenes:["assets/fitnessypilates1.jpeg","assets/fitnessypilates2.jpeg"]
+      imagenes:["public/assets/fitnessypilates1.jpeg","public/assets/fitnessypilates2.jpeg"]
     },
     {
       titulo: "Estética Corporal",
       descripcion: "Maderoterapia, Electrodos y Tratamientos Reductores.",
       beneficio: "Reducí una talla y modelá tu figura.",
       color: "bg-pilates-beige",
-      imagenes:["assets/esteticacorporal1.jpeg","assets/esteticacorporal2.jpeg"]
+      imagenes:["public/assets/esteticacorporal1.jpeg","public/assets/esteticacorporal2.jpeg"]
     },
     {
       titulo: "Masoterapia",
       descripcion: "Descontracturantes, Piedras Calientes y Drenaje Linfático.",
       beneficio: "Liberá el estrés y renová tu energía.",
       color: "bg-white",
-      imagenes:["assets/masoterapia1.jpeg","assets/masoterapia2.jpeg"]
+      imagenes:["public/assets/masoterapia1.jpeg","public/assets/masoterapia2.jpeg"]
     },
   ];
 

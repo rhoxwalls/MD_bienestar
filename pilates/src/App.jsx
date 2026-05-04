@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { MessageCircle, Menu, X, MapPin, Phone } from "lucide-react";
 import { ServiciosDetallados } from "./components/Services";
+import { FaInstagram, FaTiktok} from "react-icons/fa";
 
 const PilatesSPACarousel = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,7 +24,7 @@ const PilatesSPACarousel = () => {
       'value': 1
     });
   }
-  
+
     // 2. Creamos el mensaje codificado para la URL
     const mensaje = `Hola MD Bienestar! Mi nombre es *${nombre}* mi wapp es *${wapp}*y me gustaría reservar una sesión de *${interes}*. ¿Tienen disponibilidad?`;
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
@@ -330,16 +331,18 @@ const PilatesSPACarousel = () => {
               <div className="flex justify-center flex-col md:justify-end gap-6 pt-2">
                 <a
                   href="https://instagram.com/md.entrenamiento_estetica"
-                  className="hover:text-pilates-sage transition-colors"
+                  className="hover:text-pilates-sage transition-colors flex gap-2"
                 >
+                  <FaInstagram className="text-2xl hover:text-pilates-sage cursor-pointer" />
                   <p>
                     <span></span>md.entrenamiento_estetica
                   </p>
                 </a>
                 <a
                   href="https://www.tiktok.com/md.pilates_estetica"
-                  className="hover:text-pilates-sage transition-colors"
+                  className="hover:text-pilates-sage transition-colors flex gap-2"
                 >
+                  <FaTiktok className="text-2xl hover:text-pilates-sage cursor-pointer" />
                   <p>
                     <span></span>md.pilates_estetica
                   </p>
