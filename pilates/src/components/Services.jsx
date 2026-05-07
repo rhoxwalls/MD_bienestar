@@ -33,7 +33,7 @@ const [indiceImagen, setIndiceImagen] = useState(0);
     // Sugerencia: 5000ms (5s) para que el usuario llegue a ver el cambio.
     const intervalo = setInterval(() => {
       setIndiceImagen((prev) => (prev === 0 ? 1 : 0));
-    }, 40000); 
+    }, 8000); 
 
     return () => clearInterval(intervalo);
   }, []);
@@ -76,7 +76,7 @@ const [indiceImagen, setIndiceImagen] = useState(0);
               <p className="text-pilates-dark/80 mb-6 leading-relaxed font-light">
                 {s.descripcion}
               </p>
-              <p className="text-sm font-medium text-pilates-sage uppercase tracking-wider">
+              <p className="text-sm font-medium text-center text-pilates-sage uppercase tracking-wider">
                 {s.beneficio}
               </p>
             </div>
